@@ -23,6 +23,14 @@ public class Posicion {
         setFila(fila);
         setColumna(columna);
     }
+    
+    //Creamos el constructor copia para esta clase.
+    
+    public Posicion(Posicion copia)
+    {
+        this.fila=copia.fila;
+        this.columna=copia.columna;
+    }
 
     /*Creamos los métodos get y set para los atributos, que tiene en cuenta 
      que los valores son correctos 
