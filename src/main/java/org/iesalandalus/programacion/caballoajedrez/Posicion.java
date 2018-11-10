@@ -13,13 +13,22 @@ public class Posicion {
     //Crea la clase Posicion. Crea los atributos fila (int) y columna (char) con la visibilidad adecuada.
     private int fila;
     private char columna;
+    
+    /*Creamos un constructor para la clase Posicion que acepte como 
+    parámetros la fila y la columna y que los asigne a los atributos 
+    si son correctos  y si no lance una excepción IllegalArgumentException*/
+    
+    public Posicion(int fila, char columna)
+    {
+        setFila(fila);
+        setColumna(columna);
+    }
 
-    /**Crea los métodos get y set para los atributos. Recuerda que para 
-    el método set se debe tener en cuenta que los valores son correctos 
+    /*Creamos los métodos get y set para los atributos, que tiene en cuenta 
+     que los valores son correctos 
     (las filas van del 1 al 8 -ambos inclusive- y las columnas 
     de la 'a' a la 'h' -ambos inclusive-)  y si no se lance 
-    una excepción del tipo IllegalArgumentException con el mensaje
-    adecuado y no modifique los atributos. */
+    una excepción del tipo IllegalArgumentException con el mensaje. */
     public int getFila() {
         return fila;
     }
